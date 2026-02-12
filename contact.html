@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Friendly Kittens</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="home.html">HOME</a> |
+        <a href="adopt.html">ADOPTION</a> |
+        <a href="contact.html">CONTACT US</a> |
+    </nav>
+</header>
+
+<section class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>Have questions about adoption or our kittens? Fill out the form below and we’ll get back to you as soon as possible!</p>
+</section>
+
+<main>
+    <section class="contact-form">
+        <form onsubmit="sendMessage(); return false;">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="contact-instructions">
+        <article>
+            <h2>Instructions</h2>
+            <p>
+                If you have questions about adoption, available kittens, or the adoption process, please fill out the contact form above. 
+                Provide your name, email address, and message, and our team will respond as soon as possible. 
+                We look forward to helping you find your perfect furry companion!
+            </p>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Friendly Kittens | All Rights Reserved</p>
+</footer>
+
+<script>
+function sendMessage() {
+    alert("Thank you for contacting us! We will reply soon.");
+}
+</script>
+
+</body>
+</html>
