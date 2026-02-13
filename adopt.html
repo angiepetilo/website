@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption | Friendly Kittens</title>
+    <link rel="stylesheet" href="adopt.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="home.html">HOME</a> |
+        <a href="adopt.html">ADOPTION</a> |
+        <a href="contact.html">CONTACT US</a> |
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Give a Loving Animal a Forever Home</h1>
+    <p>Explore our adorable kittens and find your perfect furry companion today!</p>
+</section>
+
+<main>
+    <section class="Kittens">
+        <article>
+            <img src="kit.jpg" alt="Oliver the kitten">
+            <h2>Whiskers</h2>
+            <p>Sweet and affectionate, Chloe enjoys naps in sunny spots and gentle pets.</p>
+            <p>Age: 2 years</p>
+            <button class="adopt-btn">Adopt Me</button>
+        </article>
+        <article>
+            <img src="paw.jpg" alt="Luna">
+            <h2>Luna</h2>
+            <p>A gentle Persian with soft fur and big curious eyes, perfect for snuggles.</p>
+            <p>Age: 1 year</p>
+            <button class="adopt-btn">Adopt Me</button>
+        </article>
+        <article>
+            <img src="pet.jpg" alt="Chloe">
+            <h2>Chloe</h2>
+            <p>A playful little bundle of joy who loves cuddles and chasing strings</p>
+            <p>Age: 1 year</p>
+            <button class="adopt-btn">Adopt Me</button>
+        </article>
+    </section>
+
+    <section class="adoption-process">
+        <article>
+            <h2>Adoption Process</h2>
+            <p>Follow these steps to bring a kitten home:</p>
+            <ul>
+                <p>Browse our available kittens and choose the one you would like to adopt.</p>
+                <p>Contact us through our <a href="contact.html">Contact Us</a> page to express your interest.</p>
+                <p>Schedule a visit to meet the kitten in person and ensure a good fit.</p>
+                <p>Complete the adoption application and provide required documentation.</p>
+                <p>Pay the adoption fee to support the kitten's care and medical needs.</p>
+                <p>Welcome your new furry friend into your home!</p>
+            </ul>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Friendly Kittens | All Rights Reserved</p>
+</footer>
+
+<script>
+const buttons = document.querySelectorAll(".adopt-btn");
+
+buttons.forEach(button => {
+    button.addEventListener("click", function() {
+        alert("Thank you for your interest in adoption! Our team will contact you soon.");
+    });
+});
+</script>
+</body>
+</html>

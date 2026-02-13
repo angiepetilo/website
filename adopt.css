@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fdf2f2;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #e7cccc;
+    padding: 15px 0;
+    text-align: right;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(115, 185, 226);
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fde4e4;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+.Kittens {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: clamp(32px, 5vw, 80px);
+}
+.Kittens article {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+.Kittens article:hover {
+    transform: translateY(-5px);
+}
+.Kittens img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.adopt-btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.adopt-btn:hover {
+    background-color: rgb(115, 185, 226);
+    transform: translateY(-2px);
+}
+.adoption-process {
+    max-width: 100xw;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.adoption-process p, ul{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.adoption-process article {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+.adoption-process article:hover {
+    transform: translateY(-5px);
+}
+.adoption-process h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e7cccc;
+    margin-top: 40px;
+    font-size: 14px;
+}
