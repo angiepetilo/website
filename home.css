@@ -27,9 +27,19 @@ nav a:hover {
     color: rgb(115, 185, 226);
 }
 .hero {
-    text-align: center;
     padding: 60px 20px;
     background-color: #fde4e4;
+}
+.hero-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.hero-text {
+    flex: 1;
+    text-align: left;
 }
 .hero h1 {
     font-size: 40px;
@@ -39,8 +49,32 @@ nav a:hover {
     font-size: 20px;
     margin-bottom: 30px;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+}
+.hero-image {
+    flex: 0 0 auto;
+}
+.hero-image img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    border: 6px solid #fff;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
 }
 button, .testbtn {
     padding: 12px 25px;
@@ -70,14 +104,6 @@ main, section {
     padding: 40px 20px;
     max-width: 1000px;
     margin: auto;
-}
-.about, .mission {
-    background-color: #fff;
-    margin-bottom: 30px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    text-align: center;
 }
 h2 {
     font-size: 32px;

@@ -38,13 +38,13 @@ nav a:hover {
     max-width: 600px;
     margin: auto;
 }
-.Kittens {
+.projects {
     display: grid;
     gap: 24px;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: clamp(32px, 5vw, 80px);
 }
-.Kittens article {
+.projects article {
     background: #fff;
     border-radius: 15px;
     padding: 20px;
@@ -52,14 +52,14 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
 }
-.Kittens article:hover {
+.projects article:hover {
     transform: translateY(-5px);
 }
-.Kittens img {
+.projects img {
     max-width: 100%;
     border-radius: 10px;
 }
-.adopt-btn {
+.view-btn {
     margin-top: 15px;
     padding: 12px 20px;
     font-size: 16px;
@@ -70,29 +70,9 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.adopt-btn:hover {
+.view-btn:hover {
     background-color: rgb(115, 185, 226);
     transform: translateY(-2px);
-}
-.adoption-process {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-.adoption-process article {
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-.adoption-process article:hover {
-    transform: translateY(-5px);
-}
-.adoption-process h2 {
-    text-align: center;
-    margin-bottom: 20px;
 }
 footer {
     text-align: center;
