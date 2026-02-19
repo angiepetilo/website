@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    
 <header>
     <nav>
         <a href="home.html">HOME</a> |
@@ -14,27 +15,30 @@
         <a href="contact.html">CONTACT ME</a> |
     </nav>
 </header>
+
 <section class="contact-hero">
     <h1>Contact Me</h1>
     <p>Feel free to reach out via email: kelesteangie@gmail.com</p>
 </section>
+
 <main>
+
     <section class="contact-form">
-        <form onsubmit="sendMessage(); return false;">
+        <form id="contactForm">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
+
 </main>
+
 <footer>
     <p>© 2026 Angie Portfolio | All Rights Reserved</p>
 </footer>
-<script>
-function sendMessage() {
-    alert("Thank you for contacting us! We will reply soon.");
-}
-</script>
+
+<script src='contact.js'></script>
+
 </body>
 </html>

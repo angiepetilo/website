@@ -62,7 +62,13 @@ nav a:hover {
     border: 6px solid #fff;
     display: block;
 }
-
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin: 2rem 0;
+}
 @media (max-width: 700px) {
     .hero-content {
         flex-direction: column;
@@ -84,13 +90,6 @@ button, .testbtn {
     cursor: pointer;
     display: inline-block;
     transition: background-color 0.3s ease, transform 0.2s ease;
-}
-button {
-    background-color: #4CAF50;
-    color: white;
-}
-button:hover {
-    transform: translateY(-2px);
 }
 .testbtn {
     background-color: #f8d3d3;
